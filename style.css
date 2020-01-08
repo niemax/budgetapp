@@ -33,11 +33,7 @@ body {
 
 .top {
     height: 40vh;
-<<<<<<< HEAD
     background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(taustakuva.JPG);
-=======
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(taustakuva.png);
->>>>>>> f7c1b1fab8dd86b35bf575eb7aa2c2ef6428d499
     background-size: cover;
     background-position: center;
     position: relative;
