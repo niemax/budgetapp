@@ -295,7 +295,7 @@ var UIController = (function() {
       var now, months, month, year;
 
       now = new Date();
-      //var christmas = new Date(2016, 11, 25);
+      //var christmas = new Date(2019, 11, 24);
 
       months = [
         "tammikuussa",
@@ -309,19 +309,7 @@ var UIController = (function() {
         "syyskuussa",
         "lokakuussa",
         "marraskuussa",
-        "joulukuussa",
-        "Tammikuu",
-        "Helmikuu",
-        "Maaliskuu",
-        "Huhtikuu",
-        "Toukokuu",
-        "Kesäkuu",
-        "Heinäkuu",
-        "Elokuu",
-        "Syyskuu",
-        "Lokakuu",
-        "Marraskuu",
-        "December"
+        "joulukuussa"
       ];
       month = now.getMonth();
 
