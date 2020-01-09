@@ -61,7 +61,7 @@ var budgetController = (function() {
         ID = 0;
       }
 
-      // Create new item based on 'inc' or 'exp' type
+      // Create new item based on 'inc' or 'exp'
       if (type === "exp") {
         newItem = new Expense(ID, des, val);
       } else if (type === "inc") {
@@ -80,7 +80,7 @@ var budgetController = (function() {
 
       // id = 6
       //data.allItems[type][id];
-      // ids = [1 2 4  8]
+      // ids = [1, 2, 4,  8]
       //index = 3
 
       ids = data.allItems[type].map(function(current) {
@@ -116,11 +116,9 @@ var budgetController = (function() {
       /*
           a=20
           b=10
-          c=40
           income = 100
           a=20/100=20%
           b=10/100=10%
-          c=40/100=40%
           */
 
       data.allItems.exp.forEach(function(cur) {
@@ -151,6 +149,11 @@ var budgetController = (function() {
 
 
 // UI CONTROLLER
+
+
+
+
+
 var UIController = (function() {
   var DOMstrings = {
     inputType: ".add__type",
@@ -295,7 +298,7 @@ var UIController = (function() {
       var now, months, month, year;
 
       now = new Date();
-      //var christmas = new Date(2019, 11, 24);
+      //var joulu = new Date(2019, 11, 24);
 
       months = [
         "tammikuussa",
@@ -345,6 +348,11 @@ var UIController = (function() {
 
 
 // GLOBAL APP CONTROLLER
+
+
+
+
+
 var controller = (function(budgetCtrl, UICtrl) {
   var setupEventListeners = function() {
     var DOM = UICtrl.getDOMstrings();
