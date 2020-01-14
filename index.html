@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
         <meta charset="UTF-8">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
         <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
         <link type="text/css" rel="stylesheet" href="style.css">
-        <title>Budgety</title>
+        <title>Budgetapp</title>
     </head>
     <body>
         
         <div class="top">
             <div class="budget">
                 <div class="budget__title">
-                    Budjetti <span class="budget__title--month">%Month%</span>:
+                    Budjetti <span class="budget__title--month" id="month_label">%Month%</span>
+                    <button onclick="mainApp.logOut()">logOut</button>
                 </div>
                 
                 <div class="budget__value">+ 2,345.64</div>
@@ -40,7 +45,7 @@
         <div class="bottom">
             <div class="add">
                 <div class="add__container">
-                    <select class="add__type">
+                     <select class="add__type">
                         <option value="inc" selected>+</option>
                         <option value="exp">-</option>
                     </select>
@@ -118,7 +123,11 @@
             
             
         </div>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
         
         <script src="app.js"></script>
+        <script src="script2.js"></script>
+
+
     </body>
 </html>

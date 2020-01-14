@@ -2,6 +2,30 @@
 *** GENERAL
 **********************************************/
 
+
+/************MEDIA QUERIES****************/
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+img { max-width: 100%; }
+
+@media screen and (min-width: 480px) {
+    bottom {
+        width: 30%;
+    }
+  }
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -132,6 +156,18 @@ body {
     color: inherit;
     background-color: #fff;
     margin-right: 10px;
+    font-weight: 300;
+    transition: border 0.3s;
+}
+
+.add__month {
+    width: 110px;
+    border: 1px solid #e7e7e7;
+    height: 44px;
+    font-size: 18px;
+    color: inherit;
+    background-color: #fff;
+    margin-right: 2em;
     font-weight: 300;
     transition: border 0.3s;
 }

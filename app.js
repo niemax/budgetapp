@@ -172,7 +172,8 @@ var budgetController = (function() {
       percentageLabel: ".budget__expenses--percentage",
       container: ".container",
       expensesPercLabel: ".item__percentage",
-      dateLabel: ".budget__title--month"
+      dateLabel: ".budget__title--month",
+      monthLabel: ".add__month"
       };
   
       var formatNumber = function(num, type) {
@@ -324,8 +325,18 @@ var budgetController = (function() {
                   year = now.getFullYear();
                   document.querySelector(DOMstrings.dateLabel).textContent =
                     months[month] + " " + year;
+
+
+
                 },
+
+                /*selectMonth: function() {
+
+                var x = document.getElementById("select_month").value;
+                document.getElementById("month_label").innerHTML = x;
+                },*/
   
+                
                 changedType: function() {
                     var fields = document.querySelectorAll(
                         DOMstrings.inputType +
@@ -465,3 +476,26 @@ var budgetController = (function() {
   })(budgetController, UIController);
   
   controller.init();
+
+
+
+  /*var mainApp = {};
+  var firebase = app_firebase
+  (function() {
+    firebase.auth().onAuthStateChanged(function(user) {
+      if (user) {
+        // User is signed in.
+        uid = user.uid;
+      } else {
+        uid = null;
+        window.location.replace('index2.html');
+      }
+    });
+    function logOut() {
+      firebase.auth().signOut(); 
+    }
+  
+  mainApp.logOut = logOut;
+  
+  
+})();*/
