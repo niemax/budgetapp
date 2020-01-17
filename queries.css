@@ -6,6 +6,9 @@
         -moz-overflow-y: auto; }
 
 }
+
+
+
 /* Tabled Portrait */
 @media screen and (max-width: 768px) {
    .container { width: 350px; }
@@ -17,13 +20,24 @@
     body { overflow-y: auto;
         -webkit-overflow-y: auto;
         -moz-overflow-y: auto;}
+        .container { margin-left: 30px;}
+        .budget { margin-top: 30px; }
+        .add { margin-top: 20px;}
+
 }
     img { max-width: 100%; }
 
+
+
+
+
 @media screen and (max-width: 480px) {
     .income__list { width: 200px; }
-    .expenses__list { width: 200PX; }
+    .expenses__list { width: 200px; }
     .add__description  { width: 200px;}
+    .container { margin-left: 30px;}
+    .budget { margin-top: 30px; }
+    .add { margin-top: 20px;}
     body { overflow-y: auto;
     -webkit-overflow-y: auto;
 -moz-overflow-y: auto; }
