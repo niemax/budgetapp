@@ -5,6 +5,7 @@
         <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
 <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
 
+
     </head>
 
     <body>
@@ -27,6 +28,9 @@
 
 <script>
   // Your web app's Firebase configuration
+  const firebase = require("firebase");
+    // Required for side-effects
+require("firebase/firestore");
   var firebaseConfig = {
     apiKey: "AIzaSyCrqF2amvoTG2VcPD7O5PBXXsGrhw5laoE",
     authDomain: "budgetapp-bf317.firebaseapp.com",
@@ -39,8 +43,13 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+  var db = firebase.firestore();
+
   firebase.analytics();
+  
 </script>
 <script src="script2.js"></script>
+<script src="app.js"></script>
+
     </body>
 </html>

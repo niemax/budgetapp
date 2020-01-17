@@ -5,23 +5,6 @@
 
 /************MEDIA QUERIES****************/
 
-/* Tablet Landscape */
-@media screen and (max-width: 1060px) {
-    #primary { width:67%; }
-    #secondary { width:30%; margin-left:3%;}  
-}
-/* Tabled Portrait */
-@media screen and (max-width: 768px) {
-    #primary { width:100%; }
-    #secondary { width:100%; margin:0; border:none; }
-}
-img { max-width: 100%; }
-
-@media screen and (min-width: 480px) {
-    bottom {
-        width: 30%;
-    }
-  }
 
 
 
@@ -93,6 +76,8 @@ body {
     text-transform: uppercase;
 }
 
+
+
 .budget__income {
     margin-bottom: 10px;
     background-color: rgb(33, 161, 157);
@@ -160,7 +145,7 @@ body {
     transition: border 0.3s;
 }
 
-.add__month {
+.month_label {
     width: 110px;
     border: 1px solid #e7e7e7;
     height: 44px;

@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
         <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
         <link type="text/css" rel="stylesheet" href="style.css">
+        <link type="text/css" rel="stylesheet" href="queries.css">
         <title>Budgetapp</title>
     </head>
     <body>
@@ -16,8 +17,8 @@
         <div class="top">
             <div class="budget">
                 <div class="budget__title">
-                    Budjetti <span class="budget__title--month" id="month_label">%Month%</span>
-                    <button onclick="mainApp.logOut()">logOut</button>
+                    Budjetti <span class="budget__title--month">%Month%</span>
+                    <button>logOut</button>
                 </div>
                 
                 <div class="budget__value">+ 2,345.64</div>
@@ -45,6 +46,26 @@
         <div class="bottom">
             <div class="add">
                 <div class="add__container">
+                   <!--
+
+                    <select class="month_label">
+                        <option value="tammikuu" selected>tammikuu</option>
+                        <option value="helmikuu">helmikuu</option>
+                        <option value="maaliskuu">maaliskuu</option>
+                        <option value="huhtikuu">huhtikuu</option>
+                        <option value="toukokuu">toukokuu</option>
+                        <option value="kesäkuu">kesäkuu</option>
+                        <option value="heinäkuu">heinäkuu</option>
+                        <option value="elokuu">elokuu</option>
+                        <option value="syyskuu">syyskuu</option>
+                        <option value="lokakuu">lokakuu</option>
+                        <option value="marraskuu">marraskuu</option>
+                        <option value="joulukuu">joulukuu</option>
+
+                    </select>
+                  
+                --> 
+
                      <select class="add__type">
                         <option value="inc" selected>+</option>
                         <option value="exp">-</option>

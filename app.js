@@ -98,6 +98,8 @@ var budgetController = (function() {
             data.allItems[type].splice(index, 1);
         }
       },
+
+
   
       calculateBudget: function() {
         // calculate total income and expenses
@@ -173,9 +175,12 @@ var budgetController = (function() {
       container: ".container",
       expensesPercLabel: ".item__percentage",
       dateLabel: ".budget__title--month",
-      monthLabel: ".add__month"
+      monthLabel: ".month_label"
       };
-  
+
+     
+        
+
       var formatNumber = function(num, type) {
           var numSplit, int, dec, type;
            /*
@@ -214,9 +219,11 @@ var budgetController = (function() {
               return {
                   type: document.querySelector(DOMstrings.inputType).value, // Will be either inc or exp
           description: document.querySelector(DOMstrings.inputDescription).value,
-          value: parseFloat(document.querySelector(DOMstrings.inputValue).value)
+          value: parseFloat(document.querySelector(DOMstrings.inputValue).value),
               };
           },
+
+        
   
           addListItem: function(obj, type) {
             var html, newHtml, element;
@@ -325,19 +332,20 @@ var budgetController = (function() {
                   year = now.getFullYear();
                   document.querySelector(DOMstrings.dateLabel).textContent =
                     months[month] + " " + year;
+                
 
+                    
+                
+
+     
 
 
                 },
 
-                /*selectMonth: function() {
 
-                var x = document.getElementById("select_month").value;
-                document.getElementById("month_label").innerHTML = x;
-                },*/
   
                 
-                changedType: function() {
+                  changedType: function() {
                     var fields = document.querySelectorAll(
                         DOMstrings.inputType +
                         ',' +
@@ -378,7 +386,13 @@ var budgetController = (function() {
               if (event.keyCode === 13 || event.which === 13) {
                 ctrlAddItem();
               }
+
+     
+        
+            
       });
+     
+ 
   
       document
       .querySelector(DOM.container)
@@ -432,6 +446,8 @@ var budgetController = (function() {
   
         // 6. Calculate and update percentages
         updatePercentages();
+
+        getMonth();
       }
     };
   
@@ -479,23 +495,30 @@ var budgetController = (function() {
 
 
 
-  /*var mainApp = {};
-  var firebase = app_firebase
-  (function() {
-    firebase.auth().onAuthStateChanged(function(user) {
-      if (user) {
-        // User is signed in.
-        uid = user.uid;
-      } else {
-        uid = null;
-        window.location.replace('index2.html');
-      }
+  
+
+  
+  
+    /*
+      const firebase = require("firebase");
+      // Required for side-effects
+  require("firebase/firestore");
+  
+        var docRef = firestore.doc('userbudget/budgetdata');
+        var input = document.querySelector(DOM.inputDescription);
+    
+        document.querySelector(DOM.inputBtn).addEventListener('click', function() {
+            var saveData = input.value;
+            console.log('I am going to save ' + saveData + ' to Firestore');
+            docRef.set({
+              budgetdata: saveData
+            }).then(function(){
+              console.log('status saved!');
+            }).catch(function(error) {
+              console.log('Got an error: ', error);
+            })
     });
-    function logOut() {
-      firebase.auth().signOut(); 
-    }
+   */
+
+
   
-  mainApp.logOut = logOut;
-  
-  
-})();*/
