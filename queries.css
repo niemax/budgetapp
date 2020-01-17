@@ -23,6 +23,7 @@
         .container { margin-left: 30px;}
         .budget { margin-top: 20px; }
         .add { margin-top: 40px;}
+        .budget__title { margin-top: 30px; }
 
 }
     img { max-width: 100%; }
@@ -44,6 +45,8 @@
 .budget_value { margin-top: 20px; }
 .budget__income,
 .budget__expenses { width: 330px; }
+.budget__title { margin-top: 40px; }
+
 
 }
 
