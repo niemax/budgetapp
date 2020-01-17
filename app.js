@@ -441,7 +441,6 @@ var budgetController = (function() {
         // 6. Calculate and update percentages
         updatePercentages();
 
-        getMonth();
       }
     };
   
@@ -493,26 +492,6 @@ var budgetController = (function() {
 
   
   
-    /*
-      const firebase = require("firebase");
-      // Required for side-effects
-  require("firebase/firestore");
-  
-        var docRef = firestore.doc('userbudget/budgetdata');
-        var input = document.querySelector(DOM.inputDescription);
-    
-        document.querySelector(DOM.inputBtn).addEventListener('click', function() {
-            var saveData = input.value;
-            console.log('I am going to save ' + saveData + ' to Firestore');
-            docRef.set({
-              budgetdata: saveData
-            }).then(function(){
-              console.log('status saved!');
-            }).catch(function(error) {
-              console.log('Got an error: ', error);
-            })
-    });
-   */
 
 
   
