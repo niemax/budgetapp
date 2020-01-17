@@ -15,8 +15,10 @@
 
    .expenses { margin-top: 50px; }
 
-    .income__list { width: 400px; }
-    .expenses__list { width: 400px; }
+    .income__list { width: 400px;
+    margin-left: 65px; }
+    .expenses__list { width: 400px;
+    margin-left: 65px; }
     body { overflow-y: auto;
         -webkit-overflow-y: auto;
         -moz-overflow-y: auto; }
@@ -34,8 +36,10 @@
 
 
 @media screen and (max-width: 480px) {
-    .income__list { width: 200px; }
-    .expenses__list { width: 200px; }
+    .income__list { width: 200px;
+    margin-left: 20px; }
+    .expenses__list { width: 200px;
+    margin-left: 20px; }
     .add__description  { width: 200px;}
     .container { margin-left: 30px;}
     .budget { margin-top: 30px; }
