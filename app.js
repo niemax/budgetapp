@@ -174,8 +174,7 @@ var budgetController = (function() {
       percentageLabel: ".budget__expenses--percentage",
       container: ".container",
       expensesPercLabel: ".item__percentage",
-      dateLabel: ".budget__title--month",
-      monthLabel: ".month_label"
+      dateLabel: ".budget__title--month"
       };
 
      
@@ -335,12 +334,7 @@ var budgetController = (function() {
                 
 
                     
-                
-
-     
-
-
-                },
+              },
 
 
   
