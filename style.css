@@ -15,11 +15,7 @@
     box-sizing: border-box;
 }
 
-@-moz-document url-prefix() {
-    .hidmeinfirefox {
-        overflow: hidden;
-    }
-}
+
 
 .clearfix::after {
     content: "";
@@ -27,6 +23,7 @@
     clear: both;
 }
 
+html,
 body {
     color: #555;
     font-family: Open Sans;
@@ -35,6 +32,8 @@ body {
     height: 100vh;
     font-weight: 400;
     overflow: hidden;
+    overflow: -moz-hidden-unscrollable;
+    -webkit-overflow-scrolling: hidden;
 }
 
 .right { float: right; }

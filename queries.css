@@ -4,7 +4,7 @@
 }
 /* Tabled Portrait */
 @media screen and (max-width: 768px) {
-   .container { width: 800px; }
+   .container { width: 750px; }
 
    .expenses { margin-top: 50px;}
 
@@ -18,3 +18,4 @@
     .expenses__list { width: 200PX; }
     .add__description  { width: 200px;}
 }
+
