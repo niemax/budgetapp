@@ -1,6 +1,6 @@
 /* Tablet Landscape */
 @media screen and (max-width: 1060px) {
-    .container { width: 900px; }
+    .container { width: 100%; }
     body { overflow-y: auto;
         -webkit-overflow-y: auto;
         -moz-overflow-y: auto; }
@@ -11,7 +11,7 @@
 
 /* Tabled Portrait */
 @media screen and (max-width: 768px) {
-   .container { width: 350px; }
+   .container { width: 100px; }
 
    .expenses { margin-top: 50px; }
 
@@ -19,10 +19,10 @@
     .expenses__list { width: 400px; }
     body { overflow-y: auto;
         -webkit-overflow-y: auto;
-        -moz-overflow-y: auto;}
+        -moz-overflow-y: auto; }
         .container { margin-left: 30px;}
-        .budget { margin-top: 30px; }
-        .add { margin-top: 20px;}
+        .budget { margin-top: 20px; }
+        .add { margin-top: 40px;}
 
 }
     img { max-width: 100%; }
@@ -41,6 +41,7 @@
     body { overflow-y: auto;
     -webkit-overflow-y: auto;
 -moz-overflow-y: auto; }
+.budget_value { margin-top: 20px; }
 .budget__income,
 .budget__expenses { width: 330px; }
 
