@@ -13,7 +13,7 @@
 @media screen and (max-width: 768px) {
    .container { width: 100px; }
 
-   .expenses { margin-top: 25px; }
+   .expenses { margin-top: 25; }
 
     .income__list { width: 400px;
     margin-left: 65px; }
@@ -27,6 +27,7 @@
         .add { margin-top: 40px;}
         .budget__title { margin-top: 50px; }
         .add__value { margin-left: 7px; }
+        .top { margin-top: 30px;}
 
 }
     img { max-width: 100%; }
@@ -49,7 +50,8 @@
 -moz-overflow-y: auto; }
 .budget_value { margin-top: 20px; }
 .budget__income,
-.budget__expenses { width: 330px; }
+.budget__expenses { width: 330px;
+margin-left: 10px; }
 .budget__title { margin-top: 40px; }
 
 
