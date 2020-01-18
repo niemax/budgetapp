@@ -145,10 +145,35 @@
             
         </div>
 <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="/__/firebase/7.7.0/firebase-firestore.js"></script>
+
         
         <script src="app.js"></script>
         <script src="script2.js"></script>
 
+<script>
+var firebaseConfig = {
+    apiKey: "AIzaSyCrqF2amvoTG2VcPD7O5PBXXsGrhw5laoE",
+    authDomain: "budgetapp-bf317.firebaseapp.com",
+    databaseURL: "https://budgetapp-bf317.firebaseio.com",
+    projectId: "budgetapp-bf317",
+    storageBucket: "budgetapp-bf317.appspot.com",
+    messagingSenderId: "56888311851",
+    appId: "1:56888311851:web:544d199ad2e8ea2ac1aa6e",
+    measurementId: "G-DYSG0FX3RT"
+  };
+  firebase.initializeApp({
+  apiKey: '### FIREBASE API KEY ###',
+  authDomain: '### FIREBASE AUTH DOMAIN ###',
+  projectId: '### CLOUD FIRESTORE PROJECT ID ###'
+});
 
+var db = firebase.firestore();
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  firebase.analytics();
+
+</script>
     </body>
 </html>

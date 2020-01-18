@@ -5,7 +5,7 @@
 
 }
 
-
+}
 
 /* Tabled Portrait */
 @media screen and (max-width: 768px) {
@@ -22,7 +22,7 @@
         .budget { margin-top: 20px; }
     img { max-width: 100%; }
 
-
+    }
 
 
 
@@ -42,8 +42,4 @@
 .budget__income,
 .budget__expenses { width: 330px; }
 .budget__title { margin-top: 40px; }
-
-
-}
-
-}
+    }
