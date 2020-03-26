@@ -33,7 +33,7 @@ body {
     font-weight: 400;
     overflow: scroll;
     overflow: -moz-hidden-unscrollable;
-    -webkit-overflow-scrolling: hidden;
+    -webkit-overflow-scrolling: scroll;
 }
 
 .right { float: right; }
